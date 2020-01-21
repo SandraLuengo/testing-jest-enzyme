@@ -1,16 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Test } from "./components";
+import "./App.css";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         Testing with Jest and Enzyme
       </header>
+      <Test color='red'/>
     </div>
   );
-}
+};
 
 export default App;
