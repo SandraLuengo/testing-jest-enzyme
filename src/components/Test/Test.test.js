@@ -25,6 +25,7 @@ describe("<Test/>", () => {
   });
   it("expected that click on button change the button state", () => {
     wrapper.find(".buttonClick").simulate("click");
-    expect(setState).toHaveBeenCalledWith(2);
+    const p = wrapper.find(".text");
+    expect(p.text()).toBe("inputState: true");
   });
 });

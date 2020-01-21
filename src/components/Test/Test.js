@@ -5,7 +5,7 @@ const Test = ({ color }) => {
   return (
     <div className="containerTest">
       Test <button className='buttonClick' onClick={() => toggleInputState(true)} >Change State </button>
-      <p>{`inputState: ${inputState}`}</p>
+      <p className='text'>{`inputState: ${inputState}`}</p>
     </div>
   );
 };
