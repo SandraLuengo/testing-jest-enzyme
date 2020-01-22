@@ -1,10 +1,15 @@
 import React from 'react';
 
-const IntroText = () => (
-  <div>
+const IntroText = ({ className }) => (
+  <div className={`${className} introText`}>
     <header className="App-header">
-      <h1>Testing with Jest and Enzyme</h1>
+      <h1>Projecting with Jest and Enzyme</h1>
     </header>
+    <img
+      className="logoIntro"
+      alt="logo"
+      src="./image/logo.jpeg"
+    />
     <h2>Enzyme</h2>
     <h3>Shallow Rendering</h3>
     <code>

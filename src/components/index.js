@@ -1,4 +1,5 @@
-import Test from './Test/Test';
-import IntroText from './IntroText/IntroText';
+import Project from './Project/Project.styled';
+import IntroText from './IntroText/IntroText.styled';
+import Menu from './Menu/Menu.styled';
 
-export { Test, IntroText };
+export { Project, IntroText, Menu };
