@@ -1,6 +1,6 @@
-export const simpleAction = (variable) => dispatch => {
+export const simpleAction = (newValue) => dispatch => {
   dispatch({
     type: 'SIMPLE_ACTION',
-    payload: variable,
+    newValue,
   });
 };
