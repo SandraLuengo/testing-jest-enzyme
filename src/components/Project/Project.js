@@ -1,13 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Example1, Example2 } from '../../components';
 
-const Project = ({ className, color }) => {
-  const [inputState, toggleInputState] = useState(false);
-  return (
-    <div className={`${className} project`}>
-      Project <button className="buttonClick" onClick={() => toggleInputState(true)} >Change State </button>
-      <p className="text">{`inputState: ${inputState}`}</p>
-    </div>
-  );
-};
+const Project = ({ className }) => (
+  <div className={`${className} project`}>
+    Examples
+    <Example1 />
+    <Example2 />
+  </div>
+);
 
 export default Project;
