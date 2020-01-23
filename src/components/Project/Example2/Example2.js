@@ -1,8 +1,20 @@
 import React, { useState } from 'react';
+import { connect } from 'react-redux';
+import { createContact } from '../../../actions/contactAction';
+
+const mapStateToProps = state => ({
+  ...state,
+});
+
+
+const mapDispatchToProps = dispatch => ({
+  createContact: () => dispatch(createContact()),
+});
 
 const Example2 = ({ className }) => {
-  const [text, setText] = useState('sandra');
+  const [text, setText] = useState(null);
   const handleChange = ({ target: { value } }) => {
+    createContact();
     setText(value);
   };
   return (<div className={`${className} project__example2`}>
@@ -13,4 +25,7 @@ const Example2 = ({ className }) => {
   </div>);
 };
 
-export default Example2;
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(Example2);
