@@ -1,31 +1,26 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
-import { createContact } from '../../../actions/contactAction';
+import { simpleAction } from '../../../actions/simpleAction';
 
 const mapStateToProps = state => ({
   ...state,
 });
 
-
 const mapDispatchToProps = dispatch => ({
-  createContact: () => dispatch(createContact()),
+  simpleAction: (variable) => dispatch(simpleAction(variable)),
 });
 
-const Example2 = ({ className }) => {
-  const [text, setText] = useState(null);
+const Example2 = ({ className, simpleAction }) => {
   const handleChange = ({ target: { value } }) => {
-    createContact();
-    setText(value);
+    simpleAction(value);
   };
   return (<div className={`${className} project__example2`}>
     <h2>Example 2: search</h2>
     <input className="searchInput" type="text" onChange={e => handleChange(e)} />
-    <button className="project__example2__send">Send</button>
-    <p className="text">{text}</p>
+    <button className="project__example2__send" >Send</button>
+    <p className="text">Holi</p>
   </div>);
 };
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)(Example2);
+export default connect(mapStateToProps, mapDispatchToProps)(Example2);
+
