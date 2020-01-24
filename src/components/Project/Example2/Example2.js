@@ -3,14 +3,15 @@ import { connect } from 'react-redux';
 import { simpleAction } from '../../../actions/simpleAction';
 
 const mapStateToProps = state => ({
-  ...state,
+  contact: state.simpleReducer.contact,
+
 });
 
 const mapDispatchToProps = dispatch => ({
   simpleAction: (variable) => dispatch(simpleAction(variable)),
 });
 
-const Example2 = ({ className, simpleAction }) => {
+const Example2 = ({ className, simpleAction, contact }) => {
   const handleChange = ({ target: { value } }) => {
     simpleAction(value);
   };
@@ -18,7 +19,7 @@ const Example2 = ({ className, simpleAction }) => {
     <h2>Example 2: search</h2>
     <input className="searchInput" type="text" onChange={e => handleChange(e)} />
     <button className="project__example2__send" >Send</button>
-    <p className="text">Holi</p>
+    <p className="text" >{contact}</p>
   </div>);
 };
 

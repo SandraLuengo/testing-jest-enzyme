@@ -1,11 +1,15 @@
 import React from 'react';
-import { shallow, mount } from 'enzyme';
+import { Provider } from 'react-redux';
+import { shallow, mount, render } from 'enzyme';
 import Project from './Project.styled';
+import configureStore from '../../store';
+
+const props = { color: 'red' };
 
 describe('<Project/>', () => {
-  const wrapper = mount(<Project color="red" />);
+  const wrapper = mount(<Provider {...props} store={configureStore()}><Project /></Provider>);
   it('renders correctly', () => {
-    shallow(<Project />);
+    shallow(<Provider store={configureStore()}><Project /></Provider>);
   });
   it('expected to receive a prop with red color', () => {
     expect(wrapper.prop('color')).toBe('red');
