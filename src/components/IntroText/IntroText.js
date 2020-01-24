@@ -66,6 +66,7 @@ const IntroText = ({ className }) => (
   If you want to test children rendering with less overhead than mount and you are not interested in lifecycle methods, use render
         <a href="https://gist.github.com/fokusferit/e4558d384e4e9cab95d04e5f35d4f913">LINK A ESTA DOCU</a>
       </div>
+      <p><a href="https://alligator.io/react/testing-react-redux-with-jest-enzyme/">BLOG GUAY! RESUMEN TODO</a></p>
       <h2>Enzyme</h2>
       <h3>Shallow Rendering</h3>
       <code>

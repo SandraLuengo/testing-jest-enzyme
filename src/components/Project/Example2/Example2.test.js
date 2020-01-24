@@ -4,6 +4,11 @@ import { shallow, mount } from 'enzyme';
 import Example2 from './Example2';
 import configureStore from '../../../store';
 
+const initialState = {
+  counter: '',
+};
+const store = configureStore(initialState);
+
 describe('<Example2/>', () => {
   const wrapper = mount(<Provider store={configureStore()}><Example2 /></Provider>);
   it('renders correctly', () => {
@@ -17,5 +22,12 @@ describe('<Example2/>', () => {
       .find('.searchInput')
       .simulate('change', { target: { value: 'testing' } });
     expect(wrapper.find('.text').text()).toBe('testing');
+  });
+  it('dispatch', () => {
+    const dispatch = store.dispatch({
+      type: 'SIMPLE_ACTION',
+      newValue: 'pepe',
+    });
+    expect(dispatch).toMatchSnapshot();
   });
 });

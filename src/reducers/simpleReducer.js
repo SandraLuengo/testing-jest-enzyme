@@ -1,5 +1,5 @@
 const initialState = {
-  contact: '',
+  contact: 1,
 };
 
 export default (state = initialState, action) => {
