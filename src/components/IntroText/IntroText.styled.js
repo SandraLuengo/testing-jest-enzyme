@@ -18,8 +18,21 @@ export default styled(IntroText).attrs({})`
       }
     }
   }
+  .exampleCode {
+    background-color:#c6c6ff96;
+    padding: 2%;
+  }
   .logoIntro {
     display: flex;
     margin: 0 auto;
+  }
+  a {
+    text-decoration:none;
+    color:#f39915;
+    font-weight:bold;
+    transition: color .1s ease-in-out;
+    &:hover {
+      color:#ff6c03;
+    }
   }
 `;

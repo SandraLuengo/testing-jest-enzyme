@@ -1,19 +1,15 @@
 import simpleReducer from './simpleReducer';
 
-
-describe('INITIAL_STATE', () => {
-  test('is correct', () => {
-    const action = { type: 'SIMPLE_ACTION' };
-    const initialState = { contact: 1 };
-    /* expect(simpleReducer(initialState, initialState)).toEqual(initialState); */
+describe('SIMPLE_ACTION', () => {
+  it('initialState is correct', () => {
+    const action = { type: 'TESTING_SIMPLE_ACTION' };
+    const initialState = 1;
+    expect(simpleReducer(undefined, action).contact).toEqual(initialState);
   });
-});
-
-
-describe('SELECT_AVATAR', () => {
-  test('returns the correct state', () => {
-    const action = { type: 'SIMPLE_ACTION', contact: 1 };
-    expect(simpleReducer('', action)).toMatchSnapshot();
+  it('returns the correct state', () => {
+    const action = { type: 'SIMPLE_ACTION', newValue: 'pedro' };
+    const expectedState = { contact: 'pedro' };
+    expect(simpleReducer(undefined, action)).toEqual(expectedState);
   });
 });
 

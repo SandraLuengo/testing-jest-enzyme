@@ -6,3 +6,5 @@ Object {
   "type": "SIMPLE_ACTION",
 }
 `;
+
+exports[`<Example2/> renders correctly 1`] = `<Connect(Example2) />`;

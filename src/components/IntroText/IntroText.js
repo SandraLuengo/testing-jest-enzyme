@@ -64,9 +64,30 @@ const IntroText = ({ className }) => (
   If componentDidMount or componentDidUpdate should be tested, use mount
   If you want to test component lifecycle and children behavior, use mount
   If you want to test children rendering with less overhead than mount and you are not interested in lifecycle methods, use render
-        <a href="https://gist.github.com/fokusferit/e4558d384e4e9cab95d04e5f35d4f913">LINK A ESTA DOCU</a>
+        <p><a href="https://gist.github.com/fokusferit/e4558d384e4e9cab95d04e5f35d4f913">LINK A ESTA DOCU</a></p>
       </div>
-      <p><a href="https://alligator.io/react/testing-react-redux-with-jest-enzyme/">BLOG GUAY! RESUMEN TODO</a></p>
+      <p><a target="_blanck" href="https://alligator.io/react/testing-react-redux-with-jest-enzyme/">BLOG GUAY! RESUMEN TODO</a></p>
+      <p><a target="_blanck" href="https://alligator.io/testing/snapshot-testing-jest/">SNAPSHOT</a></p>
+      <p><a target="_blanck" href="https://alligator.io/testing/asynchronous-testing-jest/">TEST ASINCRONIA</a></p>
+      <p><a target="_blanck" href="https://eng.uber.com/best-practices-for-react-v16/" >UBER TIPS TO CLEAN TEST</a></p>
+      <p><a target="_blanck" href="https://docs.gitlab.com/ee/development/testing_guide/frontend_testing.html#jest">INFO SOBRE JEST DE LA WEB DE GITLAB</a></p>
+      <h2 className="exampleCode">Ejemplo de ejecutar funcion</h2>
+      <div className="exampleCode">
+        {`const removeButton = (props) => (
+  <Button onClick={() => props.remove()}>
+    Remove
+  </Button>
+)
+
+// test file
+it('test remove button', () => {
+  const mockFunction = jest.fn()
+  const test = shallow(<RemoveButton remove={mockFunction} />)
+  test.find('Button').simulate('click')
+  expect(mockFunction).toHaveBeenCalled()
+})`}
+      </div>
+
       <h2>Enzyme</h2>
       <h3>Shallow Rendering</h3>
       <code>

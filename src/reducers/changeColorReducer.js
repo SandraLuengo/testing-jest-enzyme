@@ -2,9 +2,9 @@ import initialState from './initialState';
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case 'SIMPLE_ACTION':
+    case 'TOGGLE_COLOR':
       return {
-        contact: action.newValue,
+        toggleColor: action.newValue,
       };
     default:
       return state;

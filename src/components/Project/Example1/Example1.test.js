@@ -1,12 +1,15 @@
 import React from 'react';
+import { Provider } from 'react-redux';
 import { shallow, mount } from 'enzyme';
 import Example1 from './Example1';
+import configureStore from '../../../store';
+
 
 describe('<Example1/>', () => {
-  const wrapper = mount(<Example1 />);
+  const wrapper = mount(<Provider store={configureStore()}><Example1 /></Provider>);
 
   it('renders correctly', () => {
-    shallow(<Example1 />);
+    shallow(<Provider store={configureStore()}><Example1 /></Provider>);
   });
   it('exist an element with class example1', () => {
     expect(wrapper.find('.example1').length).toBe(1);
