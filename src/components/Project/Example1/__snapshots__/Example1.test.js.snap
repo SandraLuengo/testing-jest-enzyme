@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing styled Example1 snapshot should change 1`] = `ShallowWrapper {}`;
+
+exports[`testing styled Example1 snapshot should change 2`] = `ShallowWrapper {}`;
