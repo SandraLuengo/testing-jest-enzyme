@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
-import { changeColorAction } from '../../../actions/changeColorAction';
+import { changeColorAction } from '../../../redux/actions/changeColorAction';
 
 const mapStateToProps = state => ({
   toggleColor: state.changeColorReducer.toggleColor,

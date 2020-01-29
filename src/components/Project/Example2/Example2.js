@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { simpleAction } from '../../../actions/simpleAction';
+import { simpleAction } from '../../../redux/actions/simpleAction';
 
 const mapStateToProps = state => ({
   contact: state.simpleReducer.contact,
