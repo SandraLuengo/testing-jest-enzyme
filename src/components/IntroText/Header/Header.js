@@ -7,7 +7,7 @@ const Header = ({ className }) => (
     <header className="header">
       <h1>Testing with Jest and Enzyme</h1>
     </header>
-    <Image name="header__logo" src="./image/cover.png" />
+    <Image name="header__logo" src="./image/cover.png" maxWidth="20" alt="logo" />
   </div>
 );
 

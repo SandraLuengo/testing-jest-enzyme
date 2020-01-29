@@ -11,7 +11,6 @@ export default styled(Header).attrs({})`
     &__logo {
       display: flex;
       margin: 0 auto;
-      max-width: 20%;
     }
   }
 `;
