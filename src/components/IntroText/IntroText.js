@@ -72,6 +72,8 @@ const IntroText = ({ className }) => (
       <p><a target="_blanck" href="https://eng.uber.com/best-practices-for-react-v16/" >UBER TIPS TO CLEAN TEST</a></p>
       <p><a target="_blanck" href="https://docs.gitlab.com/ee/development/testing_guide/frontend_testing.html#jest">INFO SOBRE JEST DE LA WEB DE GITLAB</a></p>
       <p><a target="_blanck" href="https://github.com/styled-components/jest-styled-components">TESTING STYLED-COMPONENTS</a></p>
+
+
       <h2 className="exampleCode">Ejemplo de ejecutar funcion</h2>
       <div className="exampleCode">
         {`const removeButton = (props) => (
