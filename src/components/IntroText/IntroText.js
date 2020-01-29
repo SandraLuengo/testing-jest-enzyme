@@ -96,7 +96,7 @@ const IntroText = ({ className }) => (
         </a>
       </p>
 
-      <h2 className="exampleCode">Ejemplo de ejecutar funcion</h2>
+      {/*  <h2 className="exampleCode">Ejemplo de ejecutar funcion</h2>
       <div className="exampleCode">
         {`const removeButton = (props) => (
   <Button onClick={() => props.remove()}>
@@ -111,9 +111,7 @@ it('test remove button', () => {
   test.find('Button').simulate('click')
   expect(mockFunction).toHaveBeenCalled()
 })`}
-      </div>
-
-
+      </div> */}
     </div>
   </div>
 );

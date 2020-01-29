@@ -18,17 +18,26 @@ export default styled(Menu).attrs({})`
     display:flex;
     justify-content:space-around;
     align-items:center;
+    a{
+      width:50%;
+      height:5vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
     &__jest, &__airbnb {
-      width:30%;
-      max-width:50%;
+      width:70%;
+      max-width:70%;
+      &:hover {
+      transition:filter .2s ease-in-out;
+      filter: blur(1px);
+      cursor: pointer;
+    }
     }
     &__plus {
       font-size:1.8em;
     }
-    &:hover {
-      transition:filter .2s ease-in-out;
-      filter: blur(1px);
-    }
+    
   }
   .menu {
     list-style: none;
