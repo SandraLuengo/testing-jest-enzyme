@@ -2,11 +2,8 @@ import styled from 'styled-components';
 import IntroText from './IntroText';
 
 export default styled(IntroText).attrs({})`
-  margin-top: 6vh;
+  margin-top: 15vh;
   .introText {
-    &__title {
-      text-align: center;
-    }
     &__container {
       display: flex;
       flex-direction: column;
@@ -21,10 +18,6 @@ export default styled(IntroText).attrs({})`
   .exampleCode {
     background-color:#c6c6ff96;
     padding: 2%;
-  }
-  .logoIntro {
-    display: flex;
-    margin: 0 auto;
   }
   a {
     text-decoration:none;

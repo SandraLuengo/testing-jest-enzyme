@@ -7,24 +7,43 @@ export default styled(Menu).attrs({})`
   left: 0;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin: 0;
   width: 100vw;
   height: 5vh;
+  padding: 1%;
+  font-family: 'Candal', sans-serif;
   .logo {
-    height: 5vh;
+    width:8%;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    &__jest, &__airbnb {
+      width:30%;
+      max-width:50%;
+    }
+    &__plus {
+      font-size:1.8em;
+    }
+    &:hover {
+      transition:filter .2s ease-in-out;
+      filter: blur(1px);
+    }
   }
   .menu {
-    background-color: #2f2f2f;
     list-style: none;
-    width: 100%;
+    width: 28%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
     &__item {
       a {
+        font-size: 1.2em;
         text-decoration: none;
-        color: white;
+        &:hover{
+          color:#114d4d;
+        }
       }
     }
   }

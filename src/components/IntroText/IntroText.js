@@ -1,11 +1,10 @@
 import React from 'react';
 
+import { Header } from '../../components';
+
 const IntroText = ({ className }) => (
   <div className={`${className} introText`}>
-    <header className="introText__title">
-      <h1>Testing with Jest and Enzyme</h1>
-    </header>
-    <img className="logoIntro" alt="logo" src="./image/logo.jpeg" />
+    <Header />
     <div className="introText__container">
       <p className="warning">
         If we work with styled-components and we have a container component to
