@@ -43,8 +43,8 @@ const IntroText = ({ className }) => (
       <h2>Links of interest</h2>
       <div className="links">
         <p className="link">
-          <a href="https://gist.github.com/fokusferit/e4558d384e4e9cab95d04e5f35d4f913">
-          ● Shallow, Mount and Render
+          <a target="_blanck" href="https://gist.github.com/fokusferit/e4558d384e4e9cab95d04e5f35d4f913">
+            ● Shallow, Mount and Render
           </a>
         </p>
 
@@ -53,7 +53,7 @@ const IntroText = ({ className }) => (
             target="_blanck"
             href="https://alligator.io/react/testing-react-redux-with-jest-enzyme/"
           >
-          ●  Testing with Jest-Enzyme step by step
+            ●  Testing with Jest-Enzyme step by step
           </a>
         </p>
         <p className="link">
@@ -61,7 +61,7 @@ const IntroText = ({ className }) => (
             target="_blanck"
             href="https://alligator.io/testing/snapshot-testing-jest/"
           >
-          ●  Creating a Snapshot
+            ●  Creating a Snapshot
           </a>
         </p>
         <p className="link">
@@ -69,7 +69,7 @@ const IntroText = ({ className }) => (
             target="_blanck"
             href="https://alligator.io/testing/asynchronous-testing-jest/"
           >
-          ●  Asynchronous Tests in Jest
+            ●  Asynchronous Tests in Jest
           </a>
         </p>
         <p className="link">
@@ -77,7 +77,7 @@ const IntroText = ({ className }) => (
             target="_blanck"
             href="https://eng.uber.com/best-practices-for-react-v16/"
           >
-          ● Best Practices for Unit Testing in React Version 16
+            ● Best Practices for Unit Testing in React Version 16
           </a>
         </p>
         <p className="link">
@@ -85,7 +85,7 @@ const IntroText = ({ className }) => (
             target="_blanck"
             href="https://docs.gitlab.com/ee/development/testing_guide/frontend_testing.html#jest"
           >
-          ●  Frontend testing standards and style guidelines
+            ●  Frontend testing standards and style guidelines
           </a>
         </p>
         <p className="link">
@@ -93,7 +93,7 @@ const IntroText = ({ className }) => (
             target="_blanck"
             href="https://github.com/styled-components/jest-styled-components"
           >
-          ●  Jest Styled Components
+            ●  Jest Styled Components
           </a>
         </p>
       </div>

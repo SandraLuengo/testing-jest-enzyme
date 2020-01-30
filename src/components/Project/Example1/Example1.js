@@ -16,7 +16,7 @@ const Example1 = ({ className, changeColorAction, toggleColor }) => {
   return (
     <div className={`${className} example1`}>
       <h2>Example 1: simple state change</h2>
-      <button className="buttonClick" onClick={() => { toggleInputState(true); changeColorAction(!toggleColor); }}>
+      <button className="buttonClick" onClick={() => { toggleInputState('true'); changeColorAction(!toggleColor); }}>
         Change State
       </button>
       <p className="text">{`inputState: ${inputState}`}</p>

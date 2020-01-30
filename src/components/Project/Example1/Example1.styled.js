@@ -9,8 +9,19 @@ const mapStateToProps = state => ({
 
 
 export default connect(mapStateToProps)(styled(Example1).attrs({})`
-    &.example1{
-        transition: background-color .5s ease-in-out;
-        background-color:${({ toggleColor }) => (toggleColor ? 'red' : 'blue')};
+    width:50%;
+    margin-top:4vh;
+    h2 {
+      font-family: "Candal", sans-serif;
+    }
+    .buttonClick {
+      border:none;
+      padding:1%;
+      color: #664dc7;
+      font-weight:bold;
+      background-color:#6d85ea8a;
+      &:hover {
+        cursor: pointer;
+      }
     }
 `);
