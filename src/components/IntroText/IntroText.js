@@ -53,7 +53,7 @@ const IntroText = ({ className }) => (
             target="_blanck"
             href="https://alligator.io/react/testing-react-redux-with-jest-enzyme/"
           >
-            ●  Testing with Jest-Enzyme step by step
+            ●  Testing with Jest-Enzyme Step by Step
           </a>
         </p>
         <p className="link">

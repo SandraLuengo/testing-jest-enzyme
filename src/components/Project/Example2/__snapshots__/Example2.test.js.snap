@@ -2,7 +2,7 @@
 
 exports[`<Example2/> dispatch 1`] = `
 Object {
-  "newValue": "pepe",
+  "payload": "pepe",
   "type": "SIMPLE_ACTION",
 }
 `;

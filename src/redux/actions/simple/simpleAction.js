@@ -1,6 +1,6 @@
-const simpleAction = (newValue) => ({
+const simpleAction = (payload) => ({
   type: 'SIMPLE_ACTION',
-  newValue,
+  payload,
 });
 
 export { simpleAction };

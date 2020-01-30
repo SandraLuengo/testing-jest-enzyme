@@ -30,7 +30,7 @@ describe('<Example2/>', () => {
   it('dispatch', () => {
     const dispatch = store.dispatch({
       type: 'SIMPLE_ACTION',
-      newValue: 'pepe',
+      payload: 'pepe',
     });
     expect(dispatch).toMatchSnapshot();
   });

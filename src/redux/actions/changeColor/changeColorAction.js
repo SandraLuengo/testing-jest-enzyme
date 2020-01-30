@@ -1,6 +1,6 @@
-const changeColorAction = (newValue) => ({
+const changeColorAction = (payload) => ({
   type: 'TOGGLE_COLOR',
-  newValue,
+  payload,
 });
 
 export { changeColorAction };

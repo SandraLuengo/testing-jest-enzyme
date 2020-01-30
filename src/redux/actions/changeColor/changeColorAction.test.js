@@ -1,6 +1,6 @@
 import React from 'react';
 import configureStore from 'redux-mock-store';
-import { simpleAction } from './simpleAction';
+import { changeColorAction } from './changeColorAction';
 
 
 const mockStore = configureStore();
@@ -13,11 +13,11 @@ describe('select_actions', () => {
   it('Dispatches the correct action and payload', () => {
     const expectedActions = [
       {
-        type: 'SIMPLE_ACTION',
-        newValue: 'Pepe',
+        type: 'TOGGLE_COLOR',
+        payload: 'true',
       },
     ];
-    store.dispatch(simpleAction('Pepe'));
+    store.dispatch(changeColorAction('true'));
     expect(store.getActions()).toEqual(expectedActions);
   });
 });
