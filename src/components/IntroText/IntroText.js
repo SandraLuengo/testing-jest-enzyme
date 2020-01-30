@@ -40,78 +40,63 @@ const IntroText = ({ className }) => (
         component who includes other styled-component components, for test it we
         have to import the ContainerComponent.styled in the test.
       </p>
-      <div>
-        <p>
+      <h2>Links of interest</h2>
+      <div className="links">
+        <p className="link">
           <a href="https://gist.github.com/fokusferit/e4558d384e4e9cab95d04e5f35d4f913">
-            LINK A ESTA DOCU
+          ● Shallow, Mount and Render
+          </a>
+        </p>
+
+        <p className="link">
+          <a
+            target="_blanck"
+            href="https://alligator.io/react/testing-react-redux-with-jest-enzyme/"
+          >
+          ●  Testing with Jest-Enzyme step by step
+          </a>
+        </p>
+        <p className="link">
+          <a
+            target="_blanck"
+            href="https://alligator.io/testing/snapshot-testing-jest/"
+          >
+          ●  Creating a Snapshot
+          </a>
+        </p>
+        <p className="link">
+          <a
+            target="_blanck"
+            href="https://alligator.io/testing/asynchronous-testing-jest/"
+          >
+          ●  Asynchronous Tests in Jest
+          </a>
+        </p>
+        <p className="link">
+          <a
+            target="_blanck"
+            href="https://eng.uber.com/best-practices-for-react-v16/"
+          >
+          ● Best Practices for Unit Testing in React Version 16
+          </a>
+        </p>
+        <p className="link">
+          <a
+            target="_blanck"
+            href="https://docs.gitlab.com/ee/development/testing_guide/frontend_testing.html#jest"
+          >
+          ●  Frontend testing standards and style guidelines
+          </a>
+        </p>
+        <p className="link">
+          <a
+            target="_blanck"
+            href="https://github.com/styled-components/jest-styled-components"
+          >
+          ●  Jest Styled Components
           </a>
         </p>
       </div>
-      <p>
-        <a
-          target="_blanck"
-          href="https://alligator.io/react/testing-react-redux-with-jest-enzyme/"
-        >
-          BLOG GUAY! RESUMEN TODO
-        </a>
-      </p>
-      <p>
-        <a
-          target="_blanck"
-          href="https://alligator.io/testing/snapshot-testing-jest/"
-        >
-          SNAPSHOT
-        </a>
-      </p>
-      <p>
-        <a
-          target="_blanck"
-          href="https://alligator.io/testing/asynchronous-testing-jest/"
-        >
-          TEST ASINCRONIA
-        </a>
-      </p>
-      <p>
-        <a
-          target="_blanck"
-          href="https://eng.uber.com/best-practices-for-react-v16/"
-        >
-          UBER TIPS TO CLEAN TEST
-        </a>
-      </p>
-      <p>
-        <a
-          target="_blanck"
-          href="https://docs.gitlab.com/ee/development/testing_guide/frontend_testing.html#jest"
-        >
-          INFO SOBRE JEST DE LA WEB DE GITLAB
-        </a>
-      </p>
-      <p>
-        <a
-          target="_blanck"
-          href="https://github.com/styled-components/jest-styled-components"
-        >
-          TESTING STYLED-COMPONENTS
-        </a>
-      </p>
-
-      {/*  <h2 className="exampleCode">Ejemplo de ejecutar funcion</h2>
-      <div className="exampleCode">
-        {`const removeButton = (props) => (
-  <Button onClick={() => props.remove()}>
-    Remove
-  </Button>
-)
-
-// test file
-it('test remove button', () => {
-  const mockFunction = jest.fn()
-  const test = shallow(<RemoveButton remove={mockFunction} />)
-  test.find('Button').simulate('click')
-  expect(mockFunction).toHaveBeenCalled()
-})`}
-      </div> */}
     </div>
   </div>
 );
