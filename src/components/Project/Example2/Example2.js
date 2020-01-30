@@ -20,7 +20,7 @@ const Example2 = ({ className, simpleAction, contact }) => {
     <input className="searchInput" type="text" onChange={e => handleChange(e)} />
     <button className="project__example2__send" >Send</button>
     <p className="text" >{contact}</p>
-    <img className="logo__jest" alt="" src="./image/jest.png" />
+    <img className="logo__jest" alt="logo" src="./image/jest.png" />
     <img className="logo__airbnb" alt="logo" src="./image/airbnb.png" />
   </div>);
 };
