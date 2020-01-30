@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SIMPLE_ACTION initialState is correct 1`] = `
+Object {
+  "contact": 1,
+}
+`;
+
+exports[`SIMPLE_ACTION returns the correct state 1`] = `
+Object {
+  "contact": "pedro",
+}
+`;

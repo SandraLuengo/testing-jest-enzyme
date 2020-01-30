@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TOGGLE_COLOR initialState is correct 1`] = `undefined`;
+
+exports[`TOGGLE_COLOR returns the correct state 1`] = `
+Object {
+  "toggleColor": true,
+}
+`;
