@@ -57,6 +57,9 @@ const IntroText = ({ className }) => (
           </a>
         </p>
         <p className="link">
+          <a target="_blanck" href="https://jestjs.io/docs/en/expect"> ●  Expect Jest</a>
+        </p>
+        <p className="link">
           <a
             target="_blanck"
             href="https://alligator.io/testing/snapshot-testing-jest/"

@@ -23,4 +23,7 @@ export default styled(Example2).attrs({})`
         cursor: pointer;
       }
     }
+    img {
+      width:5%;
+    }
 `;

@@ -35,3 +35,12 @@ describe('<Example2/>', () => {
     expect(dispatch).toMatchSnapshot();
   });
 });
+
+describe('Img in Example2', () => {
+  const wrapper = mount(<Provider store={configureStore()}><Example2 /></Provider>);
+  it('All img tag might have an alt attribute', () => {
+    wrapper.find('img').forEach((img) => {
+      expect(img.props().alt).toBeTruthy();
+    });
+  });
+});
